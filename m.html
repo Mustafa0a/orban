@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الأفعى الأصلية</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="snakeGame" width="400" height="400"></canvas>
+        <div class="controls">
+            <div class="row">
+                <button onclick="changeDirection('UP')">↑</button>
+            </div>
+            <div class="row">
+                <button onclick="changeDirection('LEFT')">←</button>
+                <button onclick="changeDirection('DOWN')">↓</button>
+                <button onclick="changeDirection('RIGHT')">→</button>
+            </div>
+        </div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <button onclick="restartGame()" id="restartButton" style="display: none;">Restart</button>
+    </div>
+    <script src="m.js"></script>
+</body>
+</html>
